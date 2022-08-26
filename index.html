@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+
+
+</head>
+
+<body class="ps-5">
+  <nav class="navbar navbar-light bg-light flex-nowrap pb-4 px-5 pt-3 ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="assets/Imagenes/logo-bookmark.svg" alt="logo-bookmark" height="18"
+          class="d-inline-block align-text-top">
+      </a>
+    </div>
+    <div class="container-fluid fs-6 pe-5">
+      <a class="nav-link text-secondary" href="#">FEATURES</a>
+      <a class="nav-link text-secondary" href="#">PRICING</a>
+      <a class="nav-link text-secondary" href="#">CONTACT</a>
+      <button class="btn  btn-sm btn-danger px-4 my-2 mx-3 shadowd" type="button">LOGIN</button>
+
+    </div>
+  </nav>
+
+  <!-- //TODO que hacer con SASS? cambiar fs-6 de 1 rem a menos, cambiar los colores primarios -->
+
+
+  <div class="container-fluid pt-4 ps-5">
+    <div class="row">
+      <div class="col-6 pt-5 ">
+        <h1 class="fs-1">A Simple Bookmark Manager</h1>
+        <p class="text-secondary fs-6">A clean and simple interface to organize your favorite websites. Open a new
+          browser
+          tab and see your sites
+          load instantly. Try it for free,</p>
+        <button type="button" class="btn-sm btn-primary shadow me-2">Get it on Chrome</button>
+        <button type="button" class="btn-sm btn-light shadow">Get it on Firefox</button>
+      </div>
+      <div class="col-6 position-relative ps-0">
+        <img src="assets/Imagenes/illustration-hero.svg" alt="illustration-hero"
+          class="img-fluid position-relative pb-5 pe-4" style="z-index: 1">
+        <!-- !No entiendo por que en este div,w-75 h-75 da saltos discretos de a 25, no hace eso muy poco flexible a bootstrap?????? y acaso no puedo controlar el z-index con bootstrap??? -->
+        <div class="bg-primary rounded-pill rounded-end position-absolute bottom-0 end-0 w-75 h-75" style="z-index: 0;">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+</body>
+
+</html>

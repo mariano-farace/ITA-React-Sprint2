@@ -1,0 +1,22 @@
+{
+  "name": "ita-react-sprint2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariano-farace/ITA-React-Sprint2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariano-farace/ITA-React-Sprint2/issues"
+  },
+  "homepage": "https://github.com/mariano-farace/ITA-React-Sprint2#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.0"
+  }
+}
