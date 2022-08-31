@@ -15,6 +15,7 @@
 
 <body class="ps-5">
   <!-- NAVBAR -->
+  <!-- //TODO borrar el colorcito gris de fondo de la navbar!! -->
   <nav class="navbar navbar-expand-md navbar-light bg-light pb-4 px-5 pt-3 fs-6">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"> <img src="assets/Imagenes/logo-bookmark.svg" alt="logo-bookmark"
@@ -62,35 +63,70 @@
 
 
   <!-- FEATURES -->
-  <div class="container-fluid pt-4 ps-5">
+  <!-- !- El apartado "Features", con el texto descriptivo, debe ir dentro del Grid de Boostrap . Eso dice el enunciado. Por que??? que gano??? -->
+  <div class="row container-fluid pt-4 ps-5">
 
 
-    <h2>Features</h2>
-    <p>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your
-      devices so you can access them on the go.</p>
+    <h3 class="col-12 fw-semibold text-center">Features</h3>
+    <p class="col-12 text-secondary fs-6 text-center">Our aim is to make it quick and easy for you to access your <br>
+      favourite websites. Your bookmarks sync between your devices <br> so you can access them on the go.</p>
 
 
 
-    <nav>
-      <div class="nav nav-tabs" id="nav-tab" role="tablist">
-        <button class="nav-link active" id="nav-simple-bookmarking-tab" data-bs-toggle="tab"
+    <nav class="col-12 m-4 ">
+      <div class="row nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+        <button class="col-12 col-md-3 nav-link active" id="nav-simple-bookmarking-tab" data-bs-toggle="tab"
           data-bs-target="#nav-simple-bookmarking" type="button" role="tab" aria-controls="nav-simple-bookmarking"
           aria-selected="true">Simple Bookmarking</button>
-        <button class="nav-link" id="nav-speedy-searching-tab" data-bs-toggle="tab"
+        <button class="col-12 col-md-3 nav-link" id="nav-speedy-searching-tab" data-bs-toggle="tab"
           data-bs-target="#nav-speedy-searching" type="button" role="tab" aria-controls="nav-speedy-searching"
           aria-selected="false">Speedy Searching</button>
-        <button class="nav-link" id="nav-easy-sharing-tab" data-bs-toggle="tab" data-bs-target="#nav-easy-sharing"
-          type="button" role="tab" aria-controls="nav-easy-sharing" aria-selected="false">Easy Sharing</button>
+        <button class="col-12 col-md-3 nav-link" id="nav-easy-sharing-tab" data-bs-toggle="tab"
+          data-bs-target="#nav-easy-sharing" type="button" role="tab" aria-controls="nav-easy-sharing"
+          aria-selected="false">Easy Sharing</button>
       </div>
     </nav>
-    <div class="tab-content" id="nav-tabContent">
+    <div class="tab-content m-4" id="nav-tabContent">
       <div class="tab-pane fade show active" id="nav-simple-bookmarking" role="tabpanel"
-        aria-labelledby="nav-simple-bookmarking-tab">TEST</div>
-      <div class="tab-pane fade" id="nav-speedy-searching" role="tabpanel" aria-labelledby="nav-speedy-searching-tab">
-        TEST2</div>
-      <div class="tab-pane fade" id="nav-easy-sharing" role="tabpanel" aria-labelledby="nav-easy-sharing-tab">TEST3
+        aria-labelledby="nav-simple-bookmarking-tab">
+        <div class="row row-cols-2">
+          <div class="col-12 col-md-6 position-relative ps-0">
+            <img src="assets/Imagenes/illustration-features-tab-1.svg" alt="illustration-features-tab-1"
+              class="img-fluid position-relative pb-5 pe-4" style="z-index: 1">
+            <!-- !Problema para preguntar! no se como controlar el tamaño de las imagens ni los dibujitos azules que estan atras. Deberian tener tamaños absolutos?? relativos???? -->
+            <div
+              class="bg-primary rounded-pill rounded-start w-100 h-75 position-absolute bottom-0 start-0 translate-middle-x "
+              style="z-index: 0;">
+            </div>
+          </div>
+          <div class="col-12 col-md-6 pt-5 ">
+            <h3 class="fw-semibold">Bookmark in one click</h3>
+            <p class="text-secondary fs-6">Organize your bookmarks however you like. Our simple drag-and-drop interface
+              gives you complete control over how you manage your favourite sites</p>
+            <button type="button" class="btn btn-sm btn-primary shadow me-2">More Info</button>
+          </div>
+
+
+
+        </div>
+
       </div>
     </div>
+    <div class="tab-pane fade" id="nav-speedy-searching" role="tabpanel" aria-labelledby="nav-speedy-searching-tab">
+      <div class="row row-cols-2">
+        <div class="col-12 col-md-6">Left1</div>
+        <div class="col-12 col-md-6">Right1</div>
+
+      </div>
+    </div>
+    <div class="tab-pane fade" id="nav-easy-sharing" role="tabpanel" aria-labelledby="nav-easy-sharing-tab">
+      <div class="row row-cols-2">
+        <div class="col-12 col-md-6">Left1</div>
+        <div class="col-12 col-md-6">Right1</div>
+
+      </div>
+    </div>
+  </div>
 
   </div>
 
