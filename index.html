@@ -11,40 +11,42 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
-
-
-
 </head>
 
 <body class="ps-5">
-  <nav class="navbar navbar-light bg-light flex-nowrap  pb-4 px-5 pt-3  ">
-    <div class="container-fluid ">
-      <a class="navbar-brand" href="#">
-        <img src="assets/Imagenes/logo-bookmark.svg" alt="logo-bookmark" height="18"
-          class="d-inline-block align-text-top">
-      </a>
-    </div>
-    <!-- //TODO Acomodar estos items cuando haces resize, el padding se pierde y se juntan habiendo lugar-->
-    <div class="container-fluid fs-6 pe-5 nav-item">
-      <a class="nav-link text-secondary" href="#">FEATURES</a>
-      <a class="nav-link text-secondary" href="#">PRICING</a>
-      <a class="nav-link text-secondary" href="#">CONTACT</a>
-      <button class="btn btn-sm btn-danger px-4 my-2 mx-3 shadow " type="button">LOGIN</button>
-
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light pb-4 px-5 pt-3 fs-6">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"> <img src="assets/Imagenes/logo-bookmark.svg" alt="logo-bookmark"
+          height="18"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto d-flex align-items-baseline">
+          <a class="nav-link text-secondary mx-3" href="#">FEATURES</a>
+          <a class="nav-link text-secondary mx-3" href="#">PRICING</a>
+          <a class="nav-link text-secondary mx-3" href="#">CONTACT</a>
+          <button class="btn btn-sm btn-danger px-4 my-2 mx-3 shadow " type="button">LOGIN</button>
+        </div>
+      </div>
     </div>
   </nav>
 
+  <!-- //TODO fijar la barra de navegacion!!!!! -->
   <!-- //TODO que hacer con SASS? cambiar fs-6 de 1 rem a menos, cambiar los colores primarios -->
+  <!-- PRESENTATION AND DOWNLOAD -->
   <div class="container-fluid pt-4 ps-5">
     <div class="row">
-      <div class="col-6 pt-5 ">
+      <div class="col-12 col-md-6 pt-5 ">
         <h1 class="fw-bold">A Simple Bookmark<br> Manager</h1>
         <p class="text-secondary fs-6">A clean and simple interface to organize your favorite <br> websites. Open a new
           browser tab and see your sites load<br>instantly. Try it for free,</p>
         <button type="button" class="btn btn-sm btn-primary shadow me-2">Get it on Chrome</button>
         <button type="button" class="btn btn-sm btn-light shadow">Get it on Firefox</button>
       </div>
-      <div class="col-6 position-relative ps-0">
+      <div class="col-12 col-md-6 position-relative ps-0">
         <img src="assets/Imagenes/illustration-hero.svg" alt="illustration-hero"
           class="img-fluid position-relative pb-5 pe-4" style="z-index: 1">
         <!-- !No entiendo por que en este div,w-75 h-75 da saltos discretos de a 25, no hace eso muy poco flexible a bootstrap?????? y acaso no puedo controlar el z-index con bootstrap??? -->
@@ -52,8 +54,47 @@
         </div>
       </div>
 
+
     </div>
   </div>
+
+
+
+
+  <!-- FEATURES -->
+  <div class="container-fluid pt-4 ps-5">
+
+
+    <h2>Features</h2>
+    <p>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your
+      devices so you can access them on the go.</p>
+
+
+
+    <nav>
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <button class="nav-link active" id="nav-simple-bookmarking-tab" data-bs-toggle="tab"
+          data-bs-target="#nav-simple-bookmarking" type="button" role="tab" aria-controls="nav-simple-bookmarking"
+          aria-selected="true">Simple Bookmarking</button>
+        <button class="nav-link" id="nav-speedy-searching-tab" data-bs-toggle="tab"
+          data-bs-target="#nav-speedy-searching" type="button" role="tab" aria-controls="nav-speedy-searching"
+          aria-selected="false">Speedy Searching</button>
+        <button class="nav-link" id="nav-easy-sharing-tab" data-bs-toggle="tab" data-bs-target="#nav-easy-sharing"
+          type="button" role="tab" aria-controls="nav-easy-sharing" aria-selected="false">Easy Sharing</button>
+      </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="nav-simple-bookmarking" role="tabpanel"
+        aria-labelledby="nav-simple-bookmarking-tab">TEST</div>
+      <div class="tab-pane fade" id="nav-speedy-searching" role="tabpanel" aria-labelledby="nav-speedy-searching-tab">
+        TEST2</div>
+      <div class="tab-pane fade" id="nav-easy-sharing" role="tabpanel" aria-labelledby="nav-easy-sharing-tab">TEST3
+      </div>
+    </div>
+
+  </div>
+
+
 
 
 
