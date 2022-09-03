@@ -1,9 +1,36 @@
+
+
 $primary:#5266df;
-// $danger:#fb5859;
+$danger:#fb5859;
 $font-weight-bold:            600;
 $font-family-sans-serif: 'Rubik', sans-serif;
-$font-size-base:              0.9rem;
-$h6-font-size:                $font-size-base*0.9;
+$enable-negative-margins: true;
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+
+//Declare and Merge custom spacer with original spacers
+
+$custom-spacers:(
+  6: ($spacer * 6)
+);
+
+$spacers: map-merge($custom-spacers, $spacers );
+
+//Custom button size mixin
+
+// .my-btn-size {
+//   // $padding-y: 0.5rem
+//   // $padding-x: 0.25rem
+//   // $font-size: 0.875rem
+//   // $line-height: 1.5
+//   // $border-radius: 0.25rem
+//   @include button-size(0.5rem, 0.25rem, 0.875rem, 0.25rem);
+// }
+
+
+
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 

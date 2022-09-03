@@ -13,12 +13,12 @@
     crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="pt-4">
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-md navbar-light pb-4 px-5 pt-3 fs-6">
+  <nav class="navbar navbar-expand-md navbar-light pb-4 ps-6 pe-6 pt-3 fs-6">
     <div class="container-fluid ps-5">
       <a class="navbar-brand" href="#"> <img src="assets/Imagenes/logo-bookmark.svg" alt="logo-bookmark"
-          height="18"></a>
+          height="22"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -34,17 +34,21 @@
     </div>
   </nav>
 
+
+
   <!-- //TODO fijar la barra de navegacion!!!!! -->
   <!-- //TODO que hacer con SASS? cambiar fs-6 de 1 rem a menos, cambiar los colores primarios -->
   <!-- PRESENTATION AND DOWNLOAD -->
-  <div class="container-fluid pt-4 ps-5">
+  <div class="container-fluid pt-5 ps-6">
     <div class="row ps-5">
-      <div class="col-12 col-md-6 pt-5 ">
+      <div class="col-12 col-md-6 pt-5 mt-4 ">
         <h1 class="fw-bold">A Simple Bookmark<br> Manager</h1>
-        <p class="text-secondary fs-6">A clean and simple interface to organize your favorite <br> websites. Open a new
+        <p class="text-secondary fs-6 pt-3">A clean and simple interface to organize your favorite <br> websites. Open a
+          new
           browser tab and see your sites load<br>instantly. Try it for free,</p>
         <button type="button" class="btn btn-sm btn-primary shadow me-2">Get it on Chrome</button>
         <button type="button" class="btn btn-sm btn-light shadow">Get it on Firefox</button>
+
       </div>
       <div class="col-12 col-md-6 position-relative ps-0">
         <img src="assets/Imagenes/illustration-hero.svg" alt="illustration-hero"
@@ -59,10 +63,11 @@
   </div>
 
   <!-- //TODO el elemento de Simple bookmark tiene margen o padding disntito que el de las cosas que son un ciclo, el segundo -->
-
+  <!-- !Preguntar:: no entiendo como se deberian comportar los textos con responsive! -->
 
   <!-- FEATURES -->
   <!-- !- El apartado "Features", con el texto descriptivo, debe ir dentro del Grid de Boostrap . Eso dice el enunciado. Por que??? que gano??? -->
+  <!-- Este componente usa margen negativo -->
   <div class="row container-fluid pt-4 ps-5">
 
 
