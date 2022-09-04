@@ -5,29 +5,21 @@ $danger:#fb5859;
 $font-weight-bold:            600;
 $font-family-sans-serif: 'Rubik', sans-serif;
 $enable-negative-margins: true;
+$enable-gradients:true;
 
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
 
 
-//Declare and Merge custom spacer with original spacers
+
+//Declare and Merge custom spacer with original spacers.
 
 $custom-spacers:(
   6: ($spacer * 6)
 );
 
 $spacers: map-merge($custom-spacers, $spacers );
-
-//Custom button size mixin
-
-// .my-btn-size {
-//   // $padding-y: 0.5rem
-//   // $padding-x: 0.25rem
-//   // $font-size: 0.875rem
-//   // $line-height: 1.5
-//   // $border-radius: 0.25rem
-//   @include button-size(0.5rem, 0.25rem, 0.875rem, 0.25rem);
-// }
 
 
 
@@ -36,3 +28,27 @@ $spacers: map-merge($custom-spacers, $spacers );
 
 
 
+
+.btn-feature {
+  @include button-variant( #ffd803, darken(#ffd803, 3%));
+
+}
+
+
+
+//Login button size
+.btn-sm-custom-1 {
+  //$padding-y, $padding-x, $font-size, $border-radius
+  @include button-size(.55rem, 2rem, .7rem, .3rem);
+}
+
+//Other buttons size
+.btn-sm-custom-2 {
+  //$padding-y, $padding-x, $font-size, $border-radius
+  @include button-size(.55rem, 1.2rem, .8rem, .3rem);
+}
+
+.nav-link {
+  font-size: 0.8rem;
+  font-weight: bolder;
+  }
