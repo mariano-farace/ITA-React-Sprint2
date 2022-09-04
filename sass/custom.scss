@@ -48,7 +48,52 @@ $spacers: map-merge($custom-spacers, $spacers );
   @include button-size(.55rem, 1.2rem, .8rem, .3rem);
 }
 
+//Customize navigation bar links
 .nav-link {
   font-size: 0.8rem;
   font-weight: bolder;
   }
+
+
+//   .nav-tabs>.active>a, .nav-tabs>.active>a:hover, .nav-tabs>.active>a:focus {
+//     border-color: #d45500;
+//     border-bottom-color: transparent;
+// }
+
+
+
+.nav-tabs{
+  border-color: transparent;
+  
+  .nav-link{
+    color: $secondary;
+    border-bottom: 1px solid #dfe2e5;
+  }
+
+  .nav-link.active {
+    border-color: transparent;
+    border-bottom: 4px solid $danger;
+ }
+
+
+.nav-link:hover{
+  color: $danger;
+  border-top: transparent ;
+  border-left: transparent ;
+  border-right: transparent ;
+
+
+}
+}
+
+
+
+
+
+//   .nav-tabs>.active>a:hover, .nav-tabs>.active>a:focus {
+//     border-color: #d45500;
+//     border-bottom-color: transparent;
+// }
+
+
+
