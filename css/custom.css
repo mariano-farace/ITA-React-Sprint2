@@ -12210,7 +12210,7 @@ textarea.form-control-lg {
 }
 
 .nav-link {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: bolder;
 }
 
@@ -12227,7 +12227,7 @@ textarea.form-control-lg {
 }
 .nav-tabs .nav-link:hover {
   color: #fb5859;
-  border-top: transparent;
-  border-left: transparent;
-  border-right: transparent;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
 }/*# sourceMappingURL=custom.css.map */

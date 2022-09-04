@@ -50,17 +50,9 @@ $spacers: map-merge($custom-spacers, $spacers );
 
 //Customize navigation bar links
 .nav-link {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: bolder;
   }
-
-
-//   .nav-tabs>.active>a, .nav-tabs>.active>a:hover, .nav-tabs>.active>a:focus {
-//     border-color: #d45500;
-//     border-bottom-color: transparent;
-// }
-
-
 
 .nav-tabs{
   border-color: transparent;
@@ -78,9 +70,9 @@ $spacers: map-merge($custom-spacers, $spacers );
 
 .nav-link:hover{
   color: $danger;
-  border-top: transparent ;
-  border-left: transparent ;
-  border-right: transparent ;
+  border-top-color: transparent ;
+  border-left-color: transparent;
+  border-right-color: transparent;
 
 
 }
