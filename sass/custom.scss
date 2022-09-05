@@ -48,7 +48,16 @@ $spacers: map-merge($custom-spacers, $spacers );
   @include button-size(.55rem, 1.2rem, .8rem, .3rem);
 }
 
-//Customize navigation bar links
+
+//Red text on hover
+
+#navbarNavAltMarkup > div > a:hover{
+color: $danger !important;
+}
+
+#navbarNavAltMarkup > div
+
+//Customize nav-tab links
 .nav-link {
   font-size: 0.9rem;
   font-weight: bolder;

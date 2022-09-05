@@ -12209,7 +12209,11 @@ textarea.form-control-lg {
   --bs-btn-border-radius: 0.3rem;
 }
 
-.nav-link {
+#navbarNavAltMarkup > div > a:hover {
+  color: #fb5859 !important;
+}
+
+#navbarNavAltMarkup > div .nav-link {
   font-size: 0.9rem;
   font-weight: bolder;
 }
