@@ -17,7 +17,7 @@ $enable-gradients:true;
 
 $custom-spacers:(
   6: ($spacer * 6)
-);
+ );
 
 $spacers: map-merge($custom-spacers, $spacers );
 
@@ -40,7 +40,7 @@ $font-sizes: map-merge($custom-font-size, $font-sizes );
 
 }
 
-
+//BUTTONS
 
 //Login button size
 .btn-sm-custom-1 {
@@ -55,7 +55,21 @@ $font-sizes: map-merge($custom-font-size, $font-sizes );
 }
 
 
-//Red text on hover
+
+.btn-custom-red {
+  @include button-variant($danger,$danger, #ffffff,#ffffff,$danger,$danger);
+}
+
+.btn-custom-blue {
+  @include button-variant($primary,$primary, #ffffff,#ffffff,$primary,$primary);
+}
+
+.btn-custom-gray {
+  @include button-variant(#f7f7f7,#f7f7f7, $secondary,#ffffff,$secondary,$secondary);
+}
+
+
+//Nav bar Red text on hover
 
 #navbarNavAltMarkup > div > a:hover{
 color: $danger !important;
@@ -92,15 +106,3 @@ color: $danger !important;
 }
 }
 
-
-.btn-custom-red {
-  @include button-variant($danger,$danger, #ffffff,#ffffff,$danger,$danger);
-}
-
-.btn-custom-blue {
-  @include button-variant($primary,$primary, #ffffff,#ffffff,$primary,$primary);
-}
-
-.btn-custom-gray {
-  @include button-variant(#f7f7f7,#f7f7f7, $secondary,#ffffff,$secondary,$secondary);
-}

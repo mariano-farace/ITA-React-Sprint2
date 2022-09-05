@@ -15,6 +15,10 @@
 <!-- ! TODO lo responsive se ve fatal entre medio de los dos break points, como deberia gestionar eso?? -->
 <!-- TODO Sacar container fluid de las imagenes para evitar el resizing???? -->
 <!-- TODO hacer que los links te lleven a las secciones!!! -->
+<!-- !Esta bien hecho los botones con mixin?? asi deberia haberse hecho?? -->
+<!-- ! Definitiva mente no se como gestionar los tamaños de las cosas, por ejemplo con las cards el problema es que no se si darles un tamaño fijo, o hacerlas que se vuelvan responsive y crezcan con el tamaño de la pantalla, lo mismo con la imagen que tiene la card -->
+<!-- //TODO poner el fw bold de los botones en sass y secarl odecada boton individual -->
+<!-- ! No entiendo como se reoganizan los tamaños de los elementos y paddings cuando achicas o agrandas una pantalla sin pasar un brak point -->
 
 <body class="pt-4">
   <!-- NAVBAR -->
@@ -168,6 +172,71 @@
       </div>
     </div>
   </div>
+
+  <!-- DOWNLOAD THE EXTENSION -->
+
+  <div class="row container-fluid pt-5 ps-5">
+
+    <h3 class="col-12 fw-semibold text-center pt-5 pb-3">Download the extension</h3>
+    <p class="col-12 text-secondary fs-6 text-center pb-3">We've got more browsers in the pipeline. Please do let us
+      know if <br> you've got a favourite you'd like us to prioritize.
+    </p>
+
+    <div class="container px-4">
+      <div class="row justify-content-center">
+        <div class="col-md-3">
+          <div class="card shadow border border-white">
+            <img src="assets/Imagenes/logo-chrome.svg" class="card-img-top w-50 p-3 mt-3 mx-auto d-block "
+              alt="chrome-logo">
+            <div class="card-body text-center">
+              <h6 class="card-title fw-semibold">Add to Chrome</h6>
+              <p class="card-text text-secondary fs-7">Minimum version 62</p>
+            </div>
+            <div class="text-center">
+              <img src="assets/Imagenes/bg-dots.svg" class="img-fluid" alt="dots">
+              <a href="#" class="btn btn-custom-blue btn-sm-custom-2 fw-bolder mx-3 mb-3 mt-2 ">Add & Install
+                Extension</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3  pt-4 mt-2 ">
+          <div class="card shadow border border-white">
+            <img src="assets/Imagenes/logo-firefox.svg" class="card-img-top w-50 p-3 mt-3 mx-auto d-block "
+              alt="firefox-logo">
+            <div class="card-body text-center">
+              <h6 class="card-title fw-semibold">Add to Firefox</h6>
+              <p class="card-text text-secondary fs-7">Minimum version 55</p>
+            </div>
+            <div class="text-center">
+              <img src="assets/Imagenes/bg-dots.svg" class="img-fluid" alt="dots">
+              <a href="#" class="btn btn-custom-blue btn-sm-custom-2 fw-bolder mx-3 mb-3 mt-2 ">Add & Install
+                Extension</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 pt-5 mt-3 ">
+          <div class="card shadow border border-white">
+            <img src="assets/Imagenes/logo-opera.svg" class="card-img-top w-50 p-3 mt-3 mx-auto d-block "
+              alt="opera-logo">
+            <div class="card-body text-center">
+              <h6 class="card-title fw-semibold">Add to Opera</h6>
+              <p class="card-text text-secondary fs-7">Minimum version 46</p>
+            </div>
+            <div class="text-center">
+              <img src="assets/Imagenes/bg-dots.svg" class="img-fluid" alt="dots">
+              <a href="#" class="btn btn-custom-blue btn-sm-custom-2 fw-bolder mx-3 mb-3 mt-2 ">Add & Install
+                Extension</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="py-6">banan</div>
+
+
+
+  </div>
+
 
   </div>
 

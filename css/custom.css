@@ -12213,33 +12213,6 @@ textarea.form-control-lg {
   --bs-btn-border-radius: 0.3rem;
 }
 
-#navbarNavAltMarkup > div > a:hover {
-  color: #fb5859 !important;
-}
-
-.nav-link {
-  font-size: 0.9rem;
-  font-weight: bolder;
-}
-
-.nav-tabs {
-  border-color: transparent;
-}
-.nav-tabs .nav-link {
-  color: #6c757d;
-  border-bottom: 1px solid #dfe2e5;
-}
-.nav-tabs .nav-link.active {
-  border-color: transparent;
-  border-bottom: 4px solid #fb5859;
-}
-.nav-tabs .nav-link:hover {
-  color: #fb5859;
-  border-top-color: transparent;
-  border-left-color: transparent;
-  border-right-color: transparent;
-}
-
 .btn-custom-red {
   --bs-btn-color: #ffffff;
   --bs-btn-bg: #fb5859;
@@ -12289,4 +12262,31 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #000;
   --bs-btn-disabled-bg: #f7f7f7;
   --bs-btn-disabled-border-color: #f7f7f7;
+}
+
+#navbarNavAltMarkup > div > a:hover {
+  color: #fb5859 !important;
+}
+
+.nav-link {
+  font-size: 0.9rem;
+  font-weight: bolder;
+}
+
+.nav-tabs {
+  border-color: transparent;
+}
+.nav-tabs .nav-link {
+  color: #6c757d;
+  border-bottom: 1px solid #dfe2e5;
+}
+.nav-tabs .nav-link.active {
+  border-color: transparent;
+  border-bottom: 4px solid #fb5859;
+}
+.nav-tabs .nav-link:hover {
+  color: #fb5859;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
 }/*# sourceMappingURL=custom.css.map */
