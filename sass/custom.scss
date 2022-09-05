@@ -21,16 +21,6 @@ $custom-spacers:(
 
 $spacers: map-merge($custom-spacers, $spacers );
 
-// $font-sizes: (
-//   1: $h1-font-size,
-//   2: $h2-font-size,
-//   3: $h3-font-size,
-//   4: $h4-font-size,
-//   5: $h5-font-size,
-//   6: $h6-font-size
-// );
-
-
 //Declare and Merge custom font size with original font size. To be used on nav-bar
 
 
@@ -100,4 +90,17 @@ color: $danger !important;
 
 
 }
+}
+
+
+.btn-custom-red {
+  @include button-variant($danger,$danger, #ffffff,#ffffff,$danger,$danger);
+}
+
+.btn-custom-blue {
+  @include button-variant($primary,$primary, #ffffff,#ffffff,$primary,$primary);
+}
+
+.btn-custom-gray {
+  @include button-variant(#f7f7f7,#f7f7f7, $secondary,#ffffff,$secondary,$secondary);
 }
