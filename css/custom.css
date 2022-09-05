@@ -8327,6 +8327,10 @@ textarea.form-control-lg {
   font-family: var(--bs-font-monospace) !important;
 }
 
+.fs-7 {
+  font-size: 0.8rem !important;
+}
+
 .fs-1 {
   font-size: calc(1.375rem + 1.5vw) !important;
 }
@@ -12213,7 +12217,7 @@ textarea.form-control-lg {
   color: #fb5859 !important;
 }
 
-#navbarNavAltMarkup > div .nav-link {
+.nav-link {
   font-size: 0.9rem;
   font-weight: bolder;
 }

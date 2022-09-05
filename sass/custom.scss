@@ -21,8 +21,24 @@ $custom-spacers:(
 
 $spacers: map-merge($custom-spacers, $spacers );
 
+// $font-sizes: (
+//   1: $h1-font-size,
+//   2: $h2-font-size,
+//   3: $h3-font-size,
+//   4: $h4-font-size,
+//   5: $h5-font-size,
+//   6: $h6-font-size
+// );
 
 
+//Declare and Merge custom font size with original font size. To be used on nav-bar
+
+
+$custom-font-size:(
+  7: ( $font-size-base*0.8)
+);
+
+$font-sizes: map-merge($custom-font-size, $font-sizes );
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
@@ -53,9 +69,8 @@ $spacers: map-merge($custom-spacers, $spacers );
 
 #navbarNavAltMarkup > div > a:hover{
 color: $danger !important;
-}
 
-#navbarNavAltMarkup > div
+}
 
 //Customize nav-tab links
 .nav-link {
@@ -86,15 +101,3 @@ color: $danger !important;
 
 }
 }
-
-
-
-
-
-//   .nav-tabs>.active>a:hover, .nav-tabs>.active>a:focus {
-//     border-color: #d45500;
-//     border-bottom-color: transparent;
-// }
-
-
-
