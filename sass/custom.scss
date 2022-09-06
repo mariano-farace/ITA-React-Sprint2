@@ -30,6 +30,18 @@ $custom-font-size:(
 
 $font-sizes: map-merge($custom-font-size, $font-sizes );
 
+
+//Accordion
+
+$accordion-button-active-color:black;
+$accordion-button-active-bg: none;
+
+$accordion-button-focus-box-shadow:none;
+
+$accordion-button-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 18 17"><path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"/></svg>');
+
+$accordion-button-active-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -2 18 17"><path fill="none" stroke="#FA5959" stroke-width="3" d="M1 1l8 8 8-8"/></svg>');
+
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 
@@ -106,3 +118,16 @@ color: $danger !important;
 }
 }
 
+//Accordion
+.accordion {
+
+.accordion-item {
+  border-right-style: none;
+  border-left-style: none;
+}
+
+.accordion-button:hover{
+  color: #fb5859;
+}
+
+}
