@@ -1,42 +1,43 @@
-
-
-$primary:#5266df;
-$danger:#fb5859;
-$font-weight-bold:            600;
-$font-family-sans-serif: 'Rubik', sans-serif;
+$primary: #5266df;
+$danger: #fb5859;
+$font-weight-bold: 600;
+$font-family-sans-serif: "Rubik", sans-serif;
 $enable-negative-margins: true;
-$enable-gradients:true;
+$enable-gradients: true;
 
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 
-
-
 //Declare and Merge custom spacer with original spacers.
 
-$custom-spacers:(
-  6: ($spacer * 6)
- );
+$custom-spacers: (
+  6: (
+    $spacer * 6,
+  ),
+  7: (
+    $spacer * 7,
+  ),
+);
 
-$spacers: map-merge($custom-spacers, $spacers );
+$spacers: map-merge($custom-spacers, $spacers);
 
 //Declare and Merge custom font size with original font size. To be used on nav-bar
 
-
-$custom-font-size:(
-  7: ( $font-size-base*0.8)
+$custom-font-size: (
+  7: (
+    $font-size-base * 0.8,
+  ),
 );
 
-$font-sizes: map-merge($custom-font-size, $font-sizes );
-
+$font-sizes: map-merge($custom-font-size, $font-sizes);
 
 //Accordion
 
-$accordion-button-active-color:black;
+$accordion-button-active-color: black;
 $accordion-button-active-bg: none;
 
-$accordion-button-focus-box-shadow:none;
+$accordion-button-focus-box-shadow: none;
 
 $accordion-button-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 18 17"><path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"/></svg>');
 
@@ -44,12 +45,8 @@ $accordion-button-active-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-
-
-
 .btn-feature {
-  @include button-variant( #ffd803, darken(#ffd803, 3%));
-
+  @include button-variant(#ffd803, darken(#ffd803, 3%));
 }
 
 //BUTTONS
@@ -57,47 +54,57 @@ $accordion-button-active-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3
 //Login button size
 .btn-sm-custom-1 {
   //$padding-y, $padding-x, $font-size, $border-radius
-  @include button-size(.55rem, 2rem, .7rem, .3rem);
+  @include button-size(0.55rem, 2rem, 0.7rem, 0.3rem);
 }
 
 //Other buttons size
 .btn-sm-custom-2 {
   //$padding-y, $padding-x, $font-size, $border-radius
-  @include button-size(.55rem, 1.2rem, .8rem, .3rem);
+  @include button-size(0.55rem, 1.2rem, 0.8rem, 0.3rem);
 }
 
-
-
 .btn-custom-red {
-  @include button-variant($danger,$danger, #ffffff,#ffffff,$danger,$danger);
+  @include button-variant($danger, $danger, #ffffff, #ffffff, $danger, $danger);
 }
 
 .btn-custom-blue {
-  @include button-variant($primary,$primary, #ffffff,#ffffff,$primary,$primary);
+  @include button-variant(
+    $primary,
+    $primary,
+    #ffffff,
+    #ffffff,
+    $primary,
+    $primary
+  );
 }
 
 .btn-custom-gray {
-  @include button-variant(#f7f7f7,#f7f7f7, $secondary,#ffffff,$secondary,$secondary);
+  @include button-variant(
+    #f7f7f7,
+    #f7f7f7,
+    $secondary,
+    #ffffff,
+    $secondary,
+    $secondary
+  );
 }
-
 
 //Nav bar Red text on hover
 
-#navbarNavAltMarkup > div > a:hover{
-color: $danger !important;
-
+#navbarNavAltMarkup > div > a:hover {
+  color: $danger !important;
 }
 
 //Customize nav-tab links
 .nav-link {
   font-size: 0.9rem;
   font-weight: bolder;
-  }
+}
 
-.nav-tabs{
+.nav-tabs {
   border-color: transparent;
-  
-  .nav-link{
+
+  .nav-link {
     color: $secondary;
     border-bottom: 1px solid #dfe2e5;
   }
@@ -105,29 +112,28 @@ color: $danger !important;
   .nav-link.active {
     border-color: transparent;
     border-bottom: 4px solid $danger;
- }
+  }
 
-
-.nav-link:hover{
-  color: $danger;
-  border-top-color: transparent ;
-  border-left-color: transparent;
-  border-right-color: transparent;
-
-
-}
+  .nav-link:hover {
+    color: $danger;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+  }
 }
 
 //Accordion
 .accordion {
+  .accordion-item {
+    border-right-style: none;
+    border-left-style: none;
+  }
 
-.accordion-item {
-  border-right-style: none;
-  border-left-style: none;
+  .accordion-button:hover {
+    color: #fb5859;
+  }
 }
 
-.accordion-button:hover{
-  color: #fb5859;
-}
-
+.letter-spacing{
+  letter-spacing: 0.2rem;
 }

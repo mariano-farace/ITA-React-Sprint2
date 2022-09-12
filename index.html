@@ -2,12 +2,11 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
-  <link href="./css/custom.css" rel="stylesheet">
-
+  <link href="./css/custom.css" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
@@ -22,13 +21,20 @@
 <!-- //TODO poner un prettier para este codigo y el de sass que se ve fatal -->
 <!-- //TODO borrar las imagenes de diseño la carpeta -->
 <!-- //TODO arreglar los botones cuando les haces click! -->
+<!-- //TODO minifie css -->
+<!-- !Como hacer para que cuando uno achica la pantalla, se vaya achicando el padding y no el elemento? Sin usar BPs -->
+<!-- //TODO usar min and max height para acomodar todo!! -->
+<!-- //TODO reacomodar los botones! -->
+<!-- //TODO para las font size podes usar clamp!! max y min size -->
+<!-- //TODO cambiar todas las unidades que seas px a rem -->
+<!-- //TODO text-nowrap a los botones! y otras cosas -->
 
 <body class="pt-4">
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-md navbar-light pb-4 ps-6 pe-6 pt-3 fs-6">
     <div class="container-fluid ps-5">
-      <a class="navbar-brand" href="#"> <img src="assets/Imagenes/logo-bookmark.svg" alt="logo-bookmark"
-          height="22"></a>
+      <a class="navbar-brand" href="#">
+        <img src="assets/Imagenes/logo-bookmark.svg" alt="logo-bookmark" height="22" /></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -38,8 +44,9 @@
           <a class="nav-link text-secondary mx-3 fs-7" href="#">FEATURES</a>
           <a class="nav-link text-secondary mx-3 fs-7" href="#">PRICING</a>
           <a class="nav-link text-secondary mx-3 fs-7" href="#">CONTACT</a>
-          <button class="btn btn-sm-custom-1 btn-custom-red my-2 ms-4 me-4 shadow fw-bolder "
-            type="button">LOGIN</button>
+          <button class="btn btn-sm-custom-1 btn-custom-red my-2 ms-4 me-4 shadow fw-bolder" type="button">
+            LOGIN
+          </button>
         </div>
       </div>
     </div>
@@ -48,58 +55,64 @@
   <!-- //TODO fijar la barra de navegacion!!!!! -->
   <!-- //TODO que hacer con SASS? cambiar fs-6 de 1 rem a menos, cambiar los colores primarios -->
   <!-- PRESENTATION AND DOWNLOAD -->
-  <div class="container-fluid pt-5 ps-6">
+  <section class="container-fluid pt-5 ps-6">
     <div class="row ps-5">
-      <div class="col-12 col-md-6 pt-5 mt-4 ">
-        <h1 class="fw-bold">A Simple Bookmark<br> Manager</h1>
-        <p class="text-secondary fs-6 pt-3 pb-3">A clean and simple interface to organize your favorite <br> websites.
-          Open a
-          new
-          browser tab and see your sites load<br>instantly. Try it for free,</p>
-        <button type="button" class="btn btn-sm-custom-2 btn-custom-blue shadow me-2 fw-bolder">Get it on
-          Chrome</button>
-        <button type="button" class="btn btn-sm-custom-2 btn-custom-gray shadow fw-bolder">Get it on Firefox</button>
-
+      <div class="col-12 col-md-6 pt-5 mt-4">
+        <h1 class="fw-bold">A Simple Bookmark Manager</h1>
+        <p class="text-secondary fs-6 pt-3 pb-3">
+          A clean and simple interface to organize your favorite <br />
+          websites. Open a new browser tab and see your sites load<br />instantly.
+          Try it for free,
+        </p>
+        <button type="button" class="btn btn-sm-custom-2 btn-custom-blue shadow me-2 fw-bolder">
+          Get it on Chrome
+        </button>
+        <button type="button" class="btn btn-sm-custom-2 btn-custom-gray shadow fw-bolder">
+          Get it on Firefox
+        </button>
       </div>
       <div class="col-12 col-md-6 position-relative ps-0">
         <img src="assets/Imagenes/illustration-hero.svg" alt="illustration-hero"
-          class="img-fluid position-relative pb-5 pe-4" style="z-index: 1">
+          class="img-fluid position-relative pb-5 pe-4" style="z-index: 1" />
         <!-- !No entiendo por que en este div,w-75 h-75 da saltos discretos de a 25, no hace eso muy poco flexible a bootstrap?????? y acaso no puedo controlar el z-index con bootstrap??? -->
-        <div class="bg-primary rounded-pill rounded-end position-absolute bottom-0 end-0 w-75 h-75" style="z-index: 0;">
+        <div class="bg-primary rounded-pill rounded-end position-absolute bottom-0 end-0 w-75 h-75" style="z-index: 0">
         </div>
       </div>
-
-
     </div>
-  </div>
+  </section>
 
   <!-- //TODO el elemento de Simple bookmark tiene margen o padding disntito que el de las cosas que son un ciclo, el segundo -->
   <!-- !Preguntar:: no entiendo como se deberian comportar los textos con responsive! -->
+  <!-- //TODO usar section en lugar de div -->
 
   <!-- FEATURES -->
   <!-- !- El apartado "Features", con el texto descriptivo, debe ir dentro del Grid de Boostrap . Eso dice el enunciado. Por que??? que gano??? -->
-  <div class="row container-fluid pt-5 ps-5">
-
-
+  <section class="row container-fluid pt-5 ps-5">
     <h3 class="col-12 fw-semibold text-center pt-5 pb-3">Features</h3>
-    <p class="col-12 text-secondary fs-6 text-center pb-3">Our aim is to make it quick and easy for you to access your
-      <br>
-      favourite websites. Your bookmarks sync between your devices <br> so you can access them on the go.
+    <p class="col-12 text-secondary fs-6 text-center pb-3">
+      Our aim is to make it quick and easy for you to access your
+      <br />
+      favourite websites. Your bookmarks sync between your devices <br />
+      so you can access them on the go.
     </p>
 
-
-
-    <nav class="col-12 m-4 mx-0 pb-2 ">
+    <nav class="col-12 m-4 mx-0 pb-2">
       <div class="row nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-        <button class="col-12 col-md-2 nav-link active pb-4 " id="nav-simple-bookmarking-tab" data-bs-toggle="tab"
+        <button class="col-12 col-md-2 nav-link active pb-4" id="nav-simple-bookmarking-tab" data-bs-toggle="tab"
           data-bs-target="#nav-simple-bookmarking" type="button" role="tab" aria-controls="nav-simple-bookmarking"
-          aria-selected="true">Simple Bookmarking</button>
+          aria-selected="true">
+          Simple Bookmarking
+        </button>
         <button class="col-12 col-md-2 nav-link pb-4" id="nav-speedy-searching-tab" data-bs-toggle="tab"
           data-bs-target="#nav-speedy-searching" type="button" role="tab" aria-controls="nav-speedy-searching"
-          aria-selected="false">Speedy Searching</button>
+          aria-selected="false">
+          Speedy Searching
+        </button>
         <button class="col-12 col-md-2 nav-link pb-4" id="nav-easy-sharing-tab" data-bs-toggle="tab"
           data-bs-target="#nav-easy-sharing" type="button" role="tab" aria-controls="nav-easy-sharing"
-          aria-selected="false">Easy Sharing</button>
+          aria-selected="false">
+          Easy Sharing
+        </button>
       </div>
     </nav>
     <div class="tab-content my-4" id="nav-tabContent">
@@ -108,148 +121,142 @@
         <div class="row row-cols-2">
           <div class="col-12 col-md-6 position-relative ps-6">
             <img src="assets/Imagenes/illustration-features-tab-1.svg" alt="illustration-features-tab-1"
-              class="img-fluid position-relative pb-5 " style="z-index: 1">
+              class="img-fluid position-relative pb-5" style="z-index: 1" />
             <!-- !Problema para preguntar! no se como controlar el tamaño de las imagens ni los dibujitos azules que estan atras. Deberian tener tamaños absolutos?? relativos???? -->
             <div
-              class="bg-primary rounded-pill rounded-start w-100 h-75 position-absolute bottom-0 start-0 translate-middle-x "
-              style="z-index: 0;">
-            </div>
+              class="bg-primary rounded-pill rounded-start w-100 h-75 position-absolute bottom-0 start-0 translate-middle-x"
+              style="z-index: 0"></div>
           </div>
           <div class="col-12 col-md-6 pt-5 ps-6">
-            <h3 class="fw-semibold text-wrap pb-3 ">Bookmark in one click</h3>
-            <p class="text-secondary fs-6 pe-6 me-3 pb-2 ">Organize your bookmarks however you like. Our simple
-              drag-and-drop
-              interface
-              gives you complete control over how you manage your favourite sites.</p>
-            <button type="button" class="btn btn-sm-custom-2 btn-custom-blue shadow me-2 fw-bolder">More Info</button>
+            <h3 class="fw-semibold text-wrap pb-3">Bookmark in one click</h3>
+            <p class="text-secondary fs-6 pe-6 me-3 pb-2">
+              Organize your bookmarks however you like. Our simple
+              drag-and-drop interface gives you complete control over how you
+              manage your favourite sites.
+            </p>
+            <button type="button" class="btn btn-sm-custom-2 btn-custom-blue shadow me-2 fw-bolder">
+              More Info
+            </button>
           </div>
-
-
-
         </div>
-
       </div>
       <div class="tab-pane fade" id="nav-speedy-searching" role="tabpanel" aria-labelledby="nav-speedy-searching-tab">
         <div class="row row-cols-2">
           <div class="col-12 col-md-6 position-relative ps-6">
             <img src="assets/Imagenes/illustration-features-tab-2.svg" alt="illustration-features-tab-2"
-              class="img-fluid position-relative pb-5 " style="z-index: 1">
-
+              class="img-fluid position-relative pb-5" style="z-index: 1" />
             <div
-              class="bg-primary rounded-pill rounded-start w-100 h-75 position-absolute bottom-0 start-0 translate-middle-x "
-              style="z-index: 0;">
-            </div>
+              class="bg-primary rounded-pill rounded-start w-100 h-75 position-absolute bottom-0 start-0 translate-middle-x"
+              style="z-index: 0"></div>
           </div>
           <div class="col-12 col-md-6 pt-5 ps-6">
-            <h3 class="fw-semibold text-wrap pb-3 ">Intelligent Search</h3>
-            <p class="text-secondary fs-6 pe-6 me-3 pb-2 ">Our powerful search feature will help you find saved sites in
-              no time at all. No need to trawl through all of your bookmarks</p>
-            <button type="button" class="btn btn-sm-custom-2 btn-custom-blue shadow me-2 fw-bolder">More Info</button>
+            <h3 class="fw-semibold text-wrap pb-3">Intelligent Search</h3>
+            <p class="text-secondary fs-6 pe-6 me-3 pb-2">
+              Our powerful search feature will help you find saved sites in no
+              time at all. No need to trawl through all of your bookmarks
+            </p>
+            <button type="button" class="btn btn-sm-custom-2 btn-custom-blue shadow me-2 fw-bolder">
+              More Info
+            </button>
           </div>
-
-
-
         </div>
       </div>
       <div class="tab-pane fade" id="nav-easy-sharing" role="tabpanel" aria-labelledby="nav-easy-sharing-tab">
         <div class="row row-cols-2">
           <div class="col-12 col-md-6 position-relative ps-6">
             <img src="assets/Imagenes/illustration-features-tab-3.svg" alt="illustration-features-tab-3"
-              class="img-fluid position-relative pb-5 " style="z-index: 1">
+              class="img-fluid position-relative pb-5" style="z-index: 1" />
 
             <div
-              class="bg-primary rounded-pill rounded-start w-100 h-75 position-absolute bottom-0 start-0 translate-middle-x "
-              style="z-index: 0;">
-            </div>
+              class="bg-primary rounded-pill rounded-start w-100 h-75 position-absolute bottom-0 start-0 translate-middle-x"
+              style="z-index: 0"></div>
           </div>
           <div class="col-12 col-md-6 pt-5 ps-6">
-            <h3 class="fw-semibold text-wrap pb-3 ">Share your bookmarks</h3>
-            <p class="text-secondary fs-6 pe-6 me-3 pb-2 ">Easily share your bookmarks and collections with others.
-              Create a shareable link that you can send at the click of a button.</p>
-            <button type="button" class="btn btn-sm-custom-2 btn-custom-blue shadow me-2 fw-bolder">More Info</button>
+            <h3 class="fw-semibold text-wrap pb-3">Share your bookmarks</h3>
+            <p class="text-secondary fs-6 pe-6 me-3 pb-2">
+              Easily share your bookmarks and collections with others. Create
+              a shareable link that you can send at the click of a button.
+            </p>
+            <button type="button" class="btn btn-sm-custom-2 btn-custom-blue shadow me-2 fw-bolder">
+              More Info
+            </button>
           </div>
-
-
-
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- DOWNLOAD THE EXTENSION -->
 
-  <div class="row container-fluid pt-5 ps-5">
-
-    <h3 class="col-12 fw-semibold text-center pt-5 pb-3">Download the extension</h3>
-    <p class="col-12 text-secondary fs-6 text-center pb-3">We've got more browsers in the pipeline. Please do let us
-      know if <br> you've got a favourite you'd like us to prioritize.
+  <section class="row container-fluid pt-5 ps-5">
+    <h3 class="col-12 fw-semibold text-center pt-5 pb-3">
+      Download the extension
+    </h3>
+    <p class="col-12 text-secondary fs-6 text-center pb-3">
+      We've got more browsers in the pipeline. Please do let us know if <br />
+      you've got a favourite you'd like us to prioritize.
     </p>
 
     <div class="container px-4">
       <div class="row justify-content-center">
         <div class="col-md-3">
           <div class="card shadow border border-white">
-            <img src="assets/Imagenes/logo-chrome.svg" class="card-img-top w-50 p-3 mt-3 mx-auto d-block "
-              alt="chrome-logo">
+            <img src="assets/Imagenes/logo-chrome.svg" class="card-img-top w-50 p-3 mt-3 mx-auto d-block"
+              alt="chrome-logo" />
             <div class="card-body text-center">
               <h6 class="card-title fw-semibold">Add to Chrome</h6>
               <p class="card-text text-secondary fs-7">Minimum version 62</p>
             </div>
             <div class="text-center">
-              <img src="assets/Imagenes/bg-dots.svg" class="img-fluid" alt="dots">
-              <a href="#" class="btn btn-custom-blue btn-sm-custom-2 fw-bolder mx-3 mb-3 mt-2 ">Add & Install
+              <img src="assets/Imagenes/bg-dots.svg" class="img-fluid" alt="dots" />
+              <a href="#" class="btn btn-custom-blue btn-sm-custom-2 fw-bolder mx-3 mb-3 mt-2">Add & Install
                 Extension</a>
             </div>
           </div>
         </div>
-        <div class="col-md-3  pt-4 mt-2 ">
+        <div class="col-md-3 pt-4 mt-2">
           <div class="card shadow border border-white">
-            <img src="assets/Imagenes/logo-firefox.svg" class="card-img-top w-50 p-3 mt-3 mx-auto d-block "
-              alt="firefox-logo">
+            <img src="assets/Imagenes/logo-firefox.svg" class="card-img-top w-50 p-3 mt-3 mx-auto d-block"
+              alt="firefox-logo" />
             <div class="card-body text-center">
               <h6 class="card-title fw-semibold">Add to Firefox</h6>
               <p class="card-text text-secondary fs-7">Minimum version 55</p>
             </div>
             <div class="text-center">
-              <img src="assets/Imagenes/bg-dots.svg" class="img-fluid" alt="dots">
-              <a href="#" class="btn btn-custom-blue btn-sm-custom-2 fw-bolder mx-3 mb-3 mt-2 ">Add & Install
+              <img src="assets/Imagenes/bg-dots.svg" class="img-fluid" alt="dots" />
+              <a href="#" class="btn btn-custom-blue btn-sm-custom-2 fw-bolder mx-3 mb-3 mt-2">Add & Install
                 Extension</a>
             </div>
           </div>
         </div>
-        <div class="col-md-3 pt-5 mt-3 ">
+        <div class="col-md-3 pt-5 mt-3">
           <div class="card shadow border border-white">
-            <img src="assets/Imagenes/logo-opera.svg" class="card-img-top w-50 p-3 mt-3 mx-auto d-block "
-              alt="opera-logo">
+            <img src="assets/Imagenes/logo-opera.svg" class="card-img-top w-50 p-3 mt-3 mx-auto d-block"
+              alt="opera-logo" />
             <div class="card-body text-center">
               <h6 class="card-title fw-semibold">Add to Opera</h6>
               <p class="card-text text-secondary fs-7">Minimum version 46</p>
             </div>
             <div class="text-center">
-              <img src="assets/Imagenes/bg-dots.svg" class="img-fluid" alt="dots">
-              <a href="#" class="btn btn-custom-blue btn-sm-custom-2 fw-bolder mx-3 mb-3 mt-2 ">Add & Install
+              <img src="assets/Imagenes/bg-dots.svg" class="img-fluid" alt="dots" />
+              <a href="#" class="btn btn-custom-blue btn-sm-custom-2 fw-bolder mx-3 mb-3 mt-2">Add & Install
                 Extension</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-
-
-  </div>
+  </section>
 
   <!-- FAQ -->
 
-  <div class="row container-fluid pt-5 ps-5 justify-content-center ">
-
-
-
-
-
-    <h3 class="col-12 fw-semibold text-center pt-5 pb-3">Frequently Asked Questions</h3>
-    <p class="col-12 text-secondary fs-6 text-center pb-3">Here are some of our FAQS. If you have any other
-      questions<br> you'd like answered please feel free to email us.
+  <section class="row container-fluid pt-5 ps-5 justify-content-center text-center">
+    <h3 class="col-12 fw-semibold text-center pt-5 pb-3">
+      Frequently Asked Questions
+    </h3>
+    <p class="col-12 text-secondary fs-6 text-center pb-3">
+      Here are some of our FAQS. If you have any other questions<br />
+      you'd like answered please feel free to email us.
     </p>
 
     <div class="accordion w-50" id="accordionExample">
@@ -263,11 +270,14 @@
         <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
           data-bs-parent="#accordionExample">
           <div class="accordion-body">
-            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin
-            adds the appropriate classes that we use to style each element. These classes control the overall
-            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
-            CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-            <code>.accordion-body</code>, though the transition does limit overflow.
+            <strong>This is the first item's accordion body.</strong> It is
+            shown by default, until the collapse plugin adds the appropriate
+            classes that we use to style each element. These classes control
+            the overall appearance, as well as the showing and hiding via CSS
+            transitions. You can modify any of this with custom CSS or
+            overriding our default variables. It's also worth noting that just
+            about any HTML can go within the <code>.accordion-body</code>,
+            though the transition does limit overflow.
           </div>
         </div>
       </div>
@@ -281,11 +291,14 @@
         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
           data-bs-parent="#accordionExample">
           <div class="accordion-body">
-            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
-            plugin adds the appropriate classes that we use to style each element. These classes control the overall
-            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
-            CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-            <code>.accordion-body</code>, though the transition does limit overflow.
+            <strong>This is the second item's accordion body.</strong> It is
+            hidden by default, until the collapse plugin adds the appropriate
+            classes that we use to style each element. These classes control
+            the overall appearance, as well as the showing and hiding via CSS
+            transitions. You can modify any of this with custom CSS or
+            overriding our default variables. It's also worth noting that just
+            about any HTML can go within the <code>.accordion-body</code>,
+            though the transition does limit overflow.
           </div>
         </div>
       </div>
@@ -299,11 +312,14 @@
         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
           data-bs-parent="#accordionExample">
           <div class="accordion-body">
-            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin
-            adds the appropriate classes that we use to style each element. These classes control the overall
-            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
-            CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-            <code>.accordion-body</code>, though the transition does limit overflow.
+            <strong>This is the third item's accordion body.</strong> It is
+            hidden by default, until the collapse plugin adds the appropriate
+            classes that we use to style each element. These classes control
+            the overall appearance, as well as the showing and hiding via CSS
+            transitions. You can modify any of this with custom CSS or
+            overriding our default variables. It's also worth noting that just
+            about any HTML can go within the <code>.accordion-body</code>,
+            though the transition does limit overflow.
           </div>
         </div>
       </div>
@@ -317,28 +333,90 @@
         <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
           data-bs-parent="#accordionExample">
           <div class="accordion-body">
-            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin
-            adds the appropriate classes that we use to style each element. These classes control the overall
-            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
-            CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-            <code>.accordion-body</code>, though the transition does limit overflow.
+            <strong>This is the third item's accordion body.</strong> It is
+            hidden by default, until the collapse plugin adds the appropriate
+            classes that we use to style each element. These classes control
+            the overall appearance, as well as the showing and hiding via CSS
+            transitions. You can modify any of this with custom CSS or
+            overriding our default variables. It's also worth noting that just
+            about any HTML can go within the <code>.accordion-body</code>,
+            though the transition does limit overflow.
           </div>
         </div>
       </div>
+
     </div>
+    <div class="col-12 pt-4 "><button type="button"
+        class="btn btn-sm-custom-2 btn-custom-blue shadow me-2 fw-bolder text-center">
+        More Info
+      </button></div>
 
-  </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="container-fluid bg-primary text-white text-center mt-7 pt-5 pb-5">
+
+    <div class="bg-secondary d-inline-block">
+      <p class="fw-semibold fs-7  letter-spacing my-0 ">35,000 + ALREADY JOINED</p>
+      <h3 class="fw-semibold px-4 pt-4">Stay up-to-date with what <br> we´re doing</h3>
 
 
+
+      <form class="row g-2 mx-0 pt-4 needs-validation" novalidate>
+        <div class="col-8 position-relative">
+          <!-- <label for="exampleInputEmail1" class="form-label">Email address</label> -->
+          <input type="email" class="form-control fs-7 py-2" id="exampleInputEmail1"
+            placeholder="Enter your email address" aria-describedby="emailHelp" required>
+          <div class="invalid-tooltip w-100">
+            Please choose a username.
+          </div>
+        </div>
+        <div class="div col-4 bg-black">
+          <button type="submit" class="btn btn-custom-red btn-sm-custom-1 px-4 text-nowrap">Contact Us</button>
+        </div>
+      </form>
+
+    </div>
+  </section>
+
+
+  <form class="row g-3 needs-validation" novalidate>
+    <div class="col-md-4 position-relative">
+      <label for="validationCustom01" class="form-label">First name</label>
+      <input type="email" class="form-control mb-3 " id="validationCustom01" value="Mark" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+      <div class="invalid-tooltip">
+        Not a valid email
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit">Submit form</button>
+      </div>
+  </form>
 
 </body>
 
+<script>
+  (function () {
+    'use strict'
+
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll('.needs-validation')
+
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms)
+      .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+
+          form.classList.add('was-validated')
+        }, false)
+      })
+  })()
+</script>
+
 </html>
-
-
-
-
-
-
-Is there a mobile app?
-What about other Chromium browsers?
