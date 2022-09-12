@@ -356,44 +356,30 @@
   <!-- Contact Form -->
   <section class="container-fluid bg-primary text-white text-center mt-7 pt-5 pb-5">
 
-    <div class="bg-secondary d-inline-block">
+    <div class=" d-inline-block">
       <p class="fw-semibold fs-7  letter-spacing my-0 ">35,000 + ALREADY JOINED</p>
       <h3 class="fw-semibold px-4 pt-4">Stay up-to-date with what <br> we´re doing</h3>
 
 
 
-      <form class="row g-2 mx-0 pt-4 needs-validation" novalidate>
-        <div class="col-8 position-relative">
+      <form class="row g-0 mx-0 pt-4 needs-validation" novalidate>
+        <div class="col-8 position-relative" style="z-index: 0;">
           <!-- <label for="exampleInputEmail1" class="form-label">Email address</label> -->
           <input type="email" class="form-control fs-7 py-2" id="exampleInputEmail1"
-            placeholder="Enter your email address" aria-describedby="emailHelp" required>
-          <div class="invalid-tooltip w-100">
-            Please choose a username.
+            placeholder="Enter your email address" aria-describedby="emailHelp" required style="z-index: 3;">
+          <div
+            class="invalid-tooltip w-100 h-100 position-absolute top-25 start-50 translate-middle fst-italic text-white fw-bolder fs-8 "
+            style="z-index: -1;">
+            <div class="position-absolute bottom-0 pb-1">Whoops, make sure it's an email</div>
           </div>
         </div>
-        <div class="div col-4 bg-black">
+        <div class="div col-4">
           <button type="submit" class="btn btn-custom-red btn-sm-custom-1 px-4 text-nowrap">Contact Us</button>
         </div>
       </form>
 
     </div>
   </section>
-
-
-  <form class="row g-3 needs-validation" novalidate>
-    <div class="col-md-4 position-relative">
-      <label for="validationCustom01" class="form-label">First name</label>
-      <input type="email" class="form-control mb-3 " id="validationCustom01" value="Mark" required>
-      <div class="valid-feedback">
-        Looks good!
-      </div>
-      <div class="invalid-tooltip">
-        Not a valid email
-      </div>
-      <div class="col-12">
-        <button class="btn btn-primary" type="submit">Submit form</button>
-      </div>
-  </form>
 
 </body>
 

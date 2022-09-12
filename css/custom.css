@@ -8475,6 +8475,10 @@ textarea.form-control-lg {
   font-size: 0.8rem !important;
 }
 
+.fs-8 {
+  font-size: 0.6rem !important;
+}
+
 .fs-1 {
   font-size: calc(1.375rem + 1.5vw) !important;
 }
@@ -12805,4 +12809,8 @@ textarea.form-control-lg {
 
 .letter-spacing {
   letter-spacing: 0.2rem;
+}
+
+.was-validated .form-control:invalid, .form-control.is-invalid {
+  border-width: 2px;
 }/*# sourceMappingURL=custom.css.map */
