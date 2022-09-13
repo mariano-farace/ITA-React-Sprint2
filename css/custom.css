@@ -12811,7 +12811,8 @@ textarea.form-control-lg {
   letter-spacing: 0.2rem;
 }
 
-.was-validated .form-control:invalid, .form-control.is-invalid {
+.was-validated .form-control:invalid,
+.form-control.is-invalid {
   border-width: 2px;
 }
 
