@@ -152,3 +152,14 @@ $accordion-button-active-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3
 .bg-navy {
   background-color: #242946;
 }
+
+// Social icons change color on hover. Inesperadamente, no se pueden anidar con sintaxis de sass porque genera un extraño efecto en el cual, la parte del icono que no tiene colo(la f de facebook, no es considerada como parte del icono y por lo tanto no hay cambio de color a rojo cuando se pasa el icono sobre la letra f, pero si se escribe sin anidar, como está ahora, funciona como se espera)
+
+.social-icon{
+color: white;
+
+}
+
+.social-icon:hover {
+  color:$danger
+}

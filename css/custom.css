@@ -12818,4 +12818,12 @@ textarea.form-control-lg {
 
 .bg-navy {
   background-color: #242946;
+}
+
+.social-icon {
+  color: white;
+}
+
+.social-icon:hover {
+  color: #fb5859;
 }/*# sourceMappingURL=custom.css.map */
