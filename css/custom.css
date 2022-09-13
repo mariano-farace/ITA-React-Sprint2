@@ -12813,4 +12813,8 @@ textarea.form-control-lg {
 
 .was-validated .form-control:invalid, .form-control.is-invalid {
   border-width: 2px;
+}
+
+.bg-navy {
+  background-color: #242946;
 }/*# sourceMappingURL=custom.css.map */

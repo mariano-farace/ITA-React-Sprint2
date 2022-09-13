@@ -5,6 +5,8 @@ $font-family-sans-serif: "Rubik", sans-serif;
 $enable-negative-margins: true;
 $enable-gradients: true;
 
+
+
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
@@ -146,4 +148,9 @@ $accordion-button-active-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3
 .was-validated .form-control:invalid, .form-control.is-invalid {
   border-width: 2px;
   
+}
+
+//Custom bg color navy
+.bg-navy{
+  background-color: #242946;
 }
