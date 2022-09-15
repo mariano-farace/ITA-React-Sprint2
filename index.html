@@ -29,13 +29,13 @@
 <!-- //TODO cambiar todas las unidades que seas px a rem -->
 <!-- //TODO text-nowrap a los botones! y otras cosas -->
 <!-- //TODO cambiar la imagen de la hamburguesa!!!! -->
-
+<!-- //TODO poner el padding left de md todo en un solo lugar, darle nuevo valor de sass tal vez -->
 <!-- //TODO Usar Color principal: #5265E1 - Color secundario: #FA5959.  -->
 <!-- {property}{sides}-{breakpoint}-{size}  -->
 
-<body class="pt-4 px-4">
+<body class="pt-4 px-md-0">
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-md navbar-light pb-4 ps-md-6 pe-md-4 pt-3 fs-6">
+  <nav class="navbar navbar-expand-md navbar-light px-4 pb-4 ps-md-6 pe-md-4 pt-3 fs-6">
     <div class="container-fluid ps-md-5">
       <a class="navbar-brand" href="#">
         <img src="assets/Imagenes/logo-bookmark.svg" alt="logo-bookmark" height="22" /></a>
@@ -59,14 +59,24 @@
   <!-- //TODO fijar la barra de navegacion!!!!! -->
   <!-- //TODO que hacer con SASS? cambiar fs-6 de 1 rem a menos, cambiar los colores primarios -->
   <!-- PRESENTATION AND DOWNLOAD -->
-  <section class="container-fluid pt-5 ps-6">
-    <div class="row ps-5">
-      <div class="col-12 col-md-6 pt-5 mt-4">
-        <h1 class="fw-bold">A Simple Bookmark Manager</h1>
-        <p class="text-secondary fs-6 pt-3 pb-3">
-          A clean and simple interface to organize your favorite <br />
-          websites. Open a new browser tab and see your sites load<br />instantly.
-          Try it for free,
+  <section class="container-fluid pt-5 ps-md-6 text-center text-md-start">
+    <div class="row ps-md-5">
+      <div class="col-12 col-md-6 order-md-2 position-relative ps-0">
+        <img src="assets/Imagenes/illustration-hero.svg" alt="illustration-hero"
+          class="img-fluid position-relative pb-5 pe-4" style="z-index: 1" />
+        <div class="bg-primary rounded-pill rounded-end position-absolute bottom-0 end-0 w-75 h-75" style="z-index: 0">
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 order-md-1 pt-5 mt-4 px-0">
+        <h1 class="fw-bold">
+          A Simple Bookmark <br />
+          Manager
+        </h1>
+        <p class="text-secondary fs-6 pt-3 pb-3 px-4 px-md-0 pe-md-6">
+          A clean and simple interface to organize your favorite websites.
+          Open a new browser tab and see your sites load instantly. Try it for
+          free,
         </p>
         <button type="button" class="btn btn-sm-custom-2 btn-custom-blue shadow me-2 fw-bolder">
           Get it on Chrome
@@ -74,13 +84,6 @@
         <button type="button" class="btn btn-sm-custom-2 btn-custom-gray shadow fw-bolder">
           Get it on Firefox
         </button>
-      </div>
-      <div class="col-12 col-md-6 position-relative ps-0">
-        <img src="assets/Imagenes/illustration-hero.svg" alt="illustration-hero"
-          class="img-fluid position-relative pb-5 pe-4" style="z-index: 1" />
-        <!-- !No entiendo por que en este div,w-75 h-75 da saltos discretos de a 25, no hace eso muy poco flexible a bootstrap?????? y acaso no puedo controlar el z-index con bootstrap??? -->
-        <div class="bg-primary rounded-pill rounded-end position-absolute bottom-0 end-0 w-75 h-75" style="z-index: 0">
-        </div>
       </div>
     </div>
   </section>
@@ -91,13 +94,12 @@
 
   <!-- FEATURES -->
   <!-- !- El apartado "Features", con el texto descriptivo, debe ir dentro del Grid de Boostrap . Eso dice el enunciado. Por que??? que gano??? -->
-  <section class="row container-fluid pt-5 ps-5">
+  <section class="row container-fluid pt-5 ps-md-5 px-0 mx-0">
     <h3 class="col-12 fw-semibold text-center pt-5 pb-3">Features</h3>
-    <p class="col-12 text-secondary fs-6 text-center pb-3">
-      Our aim is to make it quick and easy for you to access your
-      <br />
-      favourite websites. Your bookmarks sync between your devices <br />
-      so you can access them on the go.
+    <p class="col-12 col-md-5 text-secondary fs-6 text-center pb-3 px-4 px-md-0 mx-md-auto">
+      Our aim is to make it quick and easy for you to access your favourite
+      websites. Your bookmarks sync between your devices so you can access
+      them on the go.
     </p>
 
     <nav class="col-12 m-4 mx-0 pb-2">
@@ -119,10 +121,11 @@
         </button>
       </div>
     </nav>
+
     <div class="tab-content my-4" id="nav-tabContent">
-      <div class="tab-pane fade show active" id="nav-simple-bookmarking" role="tabpanel"
+      <div class="tab-pane fade show active text-center text-md-start" id="nav-simple-bookmarking" role="tabpanel"
         aria-labelledby="nav-simple-bookmarking-tab">
-        <div class="row row-cols-2">
+        <div class="row">
           <div class="col-12 col-md-6 position-relative ps-6">
             <img src="assets/Imagenes/illustration-features-tab-1.svg" alt="illustration-features-tab-1"
               class="img-fluid position-relative pb-5" style="z-index: 1" />
@@ -131,9 +134,10 @@
               class="bg-primary rounded-pill rounded-start w-100 h-75 position-absolute bottom-0 start-0 translate-middle-x"
               style="z-index: 0"></div>
           </div>
-          <div class="col-12 col-md-6 pt-5 ps-6">
+
+          <div class="col-12 col-md-6 pt-5 ps-md-6 px-0">
             <h3 class="fw-semibold text-wrap pb-3">Bookmark in one click</h3>
-            <p class="text-secondary fs-6 pe-6 me-3 pb-2">
+            <p class="text-secondary fs-6 pe-md-6 me-md-3 px-4 px-md-0 pb-2">
               Organize your bookmarks however you like. Our simple
               drag-and-drop interface gives you complete control over how you
               manage your favourite sites.
@@ -144,8 +148,10 @@
           </div>
         </div>
       </div>
-      <div class="tab-pane fade" id="nav-speedy-searching" role="tabpanel" aria-labelledby="nav-speedy-searching-tab">
-        <div class="row row-cols-2">
+
+      <div class="tab-pane fade text-center text-md-start" id="nav-speedy-searching" role="tabpanel"
+        aria-labelledby="nav-speedy-searching-tab">
+        <div class="row">
           <div class="col-12 col-md-6 position-relative ps-6">
             <img src="assets/Imagenes/illustration-features-tab-2.svg" alt="illustration-features-tab-2"
               class="img-fluid position-relative pb-5" style="z-index: 1" />
@@ -153,9 +159,9 @@
               class="bg-primary rounded-pill rounded-start w-100 h-75 position-absolute bottom-0 start-0 translate-middle-x"
               style="z-index: 0"></div>
           </div>
-          <div class="col-12 col-md-6 pt-5 ps-6">
+          <div class="col-12 col-md-6 pt-5 ps-md-6">
             <h3 class="fw-semibold text-wrap pb-3">Intelligent Search</h3>
-            <p class="text-secondary fs-6 pe-6 me-3 pb-2">
+            <p class="text-secondary fs-6 pe-md-6 me-md-3 pb-2">
               Our powerful search feature will help you find saved sites in no
               time at all. No need to trawl through all of your bookmarks
             </p>
@@ -165,8 +171,10 @@
           </div>
         </div>
       </div>
-      <div class="tab-pane fade" id="nav-easy-sharing" role="tabpanel" aria-labelledby="nav-easy-sharing-tab">
-        <div class="row row-cols-2">
+
+      <div class="tab-pane fade text-center text-md-start" id="nav-easy-sharing" role="tabpanel"
+        aria-labelledby="nav-easy-sharing-tab">
+        <div class="row">
           <div class="col-12 col-md-6 position-relative ps-6">
             <img src="assets/Imagenes/illustration-features-tab-3.svg" alt="illustration-features-tab-3"
               class="img-fluid position-relative pb-5" style="z-index: 1" />
@@ -175,9 +183,9 @@
               class="bg-primary rounded-pill rounded-start w-100 h-75 position-absolute bottom-0 start-0 translate-middle-x"
               style="z-index: 0"></div>
           </div>
-          <div class="col-12 col-md-6 pt-5 ps-6">
+          <div class="col-12 col-md-6 pt-5 ps-md-6">
             <h3 class="fw-semibold text-wrap pb-3">Share your bookmarks</h3>
-            <p class="text-secondary fs-6 pe-6 me-3 pb-2">
+            <p class="text-secondary fs-6 pe-md-6 me-3 pb-2">
               Easily share your bookmarks and collections with others. Create
               a shareable link that you can send at the click of a button.
             </p>
