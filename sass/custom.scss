@@ -92,7 +92,13 @@ $accordion-button-active-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3
   );
 }
 
-//Nav bar Red text on hover
+//Nav bar Red text on hover and Icon
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("/assets/Imagenes/icon-hamburger.svg");
+  background-size: auto;
+  }
+
 
 #navbarNavAltMarkup > div > a:hover {
   color: $danger !important;

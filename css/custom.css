@@ -12772,6 +12772,11 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #f7f7f7;
 }
 
+.navbar-light .navbar-toggler-icon {
+  background-image: url("/assets/Imagenes/icon-hamburger.svg");
+  background-size: auto;
+}
+
 #navbarNavAltMarkup > div > a:hover {
   color: #fb5859 !important;
 }
