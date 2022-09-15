@@ -12843,4 +12843,9 @@ textarea.form-control-lg {
   .card-container .card-s:nth-child(3) {
     margin-top: 4rem;
   }
+}
+@media screen and (max-width: 768px) {
+  .accordion .accordion-item:nth-child(1) {
+    border-top: none;
+  }
 }/*# sourceMappingURL=custom.css.map */

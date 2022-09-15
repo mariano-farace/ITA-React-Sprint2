@@ -170,17 +170,30 @@ color: white;
   color:$danger
 }
 
-//Card spacing
-// En el ejercicio 7 pide usar el pseudo selector nth-child y herencia de SASS para dar el posicionamiento. Las cards estan posicionadas usando margin, y el margin no se puede heredar usando herencia de sass, sino que se puede hacer override , al menos asi lo entiendo y no encontré utilidad en la herencia de sass para este ejercicio. 
 
 @media screen and (min-width: 768px) {
+
+
+//Card spacing
+// En el ejercicio 7 pide usar el pseudo selector nth-child y herencia de SASS para dar el posicionamiento. Las cards estan posicionadas usando margin, y el margin no se puede heredar usando herencia de sass, sino que se puede hacer override , al menos asi lo entiendo y no encontré utilidad en la herencia de sass para este ejercicio. 
 
   @for $i from 1 through 3 {
     .card-container .card-s:nth-child(#{$i}) {
       margin-top:2* $spacer*($i - 1);
     }
   }
-    
+
+  
+
+  
 }
 
+
+@media screen and (max-width: 768px) {
+//Will remove the top border of the first accordion item on small screen
+
+  .accordion .accordion-item:nth-child(1){
+    border-top: none;
+  }
+}
 
