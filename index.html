@@ -32,6 +32,8 @@
 <!-- //TODO poner el padding left de md todo en un solo lugar, darle nuevo valor de sass tal vez -->
 <!-- //TODO Usar Color principal: #5265E1 - Color secundario: #FA5959.  -->
 <!-- {property}{sides}-{breakpoint}-{size}  -->
+<!-- //TODO buscar botones que son las altos que los que vos tenes y cambiarlos!! fijate que a algunos los emparchaste con padding pero eso no esta bien!!!, Osea, revisar el tamaño de todos los botones -->
+<!--  cambiar el simbolito rojo de la form cuando es rechaza por una imagen custom que anda por ahi!!! -->
 
 <body class="pt-4 px-md-0">
   <!-- NAVBAR -->
@@ -400,21 +402,21 @@
         we´re doing
       </h3>
 
-      <form class="row g-0 mx-0 pt-4 needs-validation" novalidate>
-        <div class="col-8 position-relative" style="z-index: 0">
+      <form class="row g-md-2 mx-0 pt-4 needs-validation" novalidate>
+        <div class="col-12 col-md-8 position-relative" style="z-index: 1">
           <!-- <label for="exampleInputEmail1" class="form-label">Email address</label> -->
-          <input type="email" class="form-control fs-7 py-2" id="exampleInputEmail1"
-            placeholder="Enter your email address" aria-describedby="emailHelp" required style="z-index: 3" />
-          <div
-            class="invalid-tooltip w-100 h-100 position-absolute top-25 start-50 translate-middle fst-italic text-white fw-bolder fs-8"
-            style="z-index: -1">
-            <div class="position-absolute bottom-0 pb-1">
+          <input type="email" class="form-control fs-7 py-2 position-relative" id="exampleInputEmail1"
+            placeholder="Enter your email address" aria-describedby="emailHelp" required style="z-index: 10" />
+          <div class="invalid-feedback bg-danger pt-2 pb-1 ps-2 text-start rounded-bottom position-relative"
+            style="z-index: 1">
+            <div class="text-white fw-bolder fs-8 fst-italic">
+              <!-- position-absolute bottom-0 pb-1 -->
               Whoops, make sure it's an email
             </div>
           </div>
         </div>
-        <div class="div col-4">
-          <button type="submit" class="btn btn-custom-red btn-sm-custom-1 px-4 text-nowrap">
+        <div class="col-12 col-md-4 pt-3 pt-md-0">
+          <button type="submit" class="btn btn-custom-red btn-sm-custom-1 px-4 text-nowrap fw-bolder w-100">
             Contact Us
           </button>
         </div>
