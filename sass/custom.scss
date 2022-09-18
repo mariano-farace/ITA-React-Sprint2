@@ -46,9 +46,6 @@ $accordion-button-active-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-.btn-feature {
-  @include button-variant(#ffd803, darken(#ffd803, 3%));
-}
 
 //BUTTONS
 
