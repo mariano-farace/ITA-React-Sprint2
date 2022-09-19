@@ -43,6 +43,11 @@ $accordion-button-focus-box-shadow: none;
 $accordion-button-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 18 17"><path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"/></svg>');
 $accordion-button-active-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -2 18 17"><path fill="none" stroke="#FA5959" stroke-width="3" d="M1 1l8 8 8-8"/></svg>');
 
+//Nav-tabs
+
+$nav-tabs-border-color: transparent;
+$nav-tabs-link-hover-border-color:  transparent;
+$nav-tabs-link-active-border-color:  transparent;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
@@ -100,31 +105,61 @@ $accordion-button-active-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3
 }
 
 //Customize nav-tab links
+
+//Applies to all three navigation bars (top, bottom and also nav-tabs
 .nav-link {
   font-size: 0.9rem;
   font-weight: bolder;
 }
 
-.nav-tabs {
-  border-color: transparent;
 
-  .nav-link {
-    color: $secondary;
-    border-bottom: 1px solid #dfe2e5;
+
+.nav-link-text {
+  color:$secondary;
+  
+  &:hover {
+    color: $danger;
   }
+
+}
+
+#features-tab .nav-item{
+  border-bottom: 1px solid #dfe2e5;
+
 
   .nav-link.active {
-    border-color: transparent;
-    border-bottom: 4px solid $danger;
-  }
+    border-bottom: 3px solid $danger;
 
-  .nav-link:hover {
-    color: $danger;
-    border-top-color: transparent;
-    border-left-color: transparent;
-    border-right-color: transparent;
-  }
+   }
+
 }
+
+@media (max-width: 768px) {
+  #features-tab .nav-item {
+    &:first-child{
+      border-top: 1px solid #dfe2e5;
+    }
+
+    .nav-link{
+
+      &.active {
+        border-bottom: 1px solid #dfe2e5;
+
+        position: relative;
+    
+        &::after{
+          content: "";
+          position: absolute;
+          border-bottom: 3px solid $danger;
+          width: 32%;
+          left: 34%;
+          padding-bottom: 0.9em;
+        }
+      }
+    
+  }}
+}
+
 
 //Accordion
 .accordion {

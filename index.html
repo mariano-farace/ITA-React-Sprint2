@@ -100,7 +100,7 @@
 
 
 
-  <section class="row container-fluid pt-6 pt-md-5  px-0 mx-0">
+  <section class="row container-fluid pt-6 pt-md-5  px-0 mx-0 justify-content-center">
     <h3 class="col-12 fw-semibold text-center pt-5 pb-3">Features</h3>
     <p class="col-12 col-md-5 text-secondary fs-6 text-center px-4 px-md-0 mx-md-auto  pb-3">
       Our aim is to make it quick and easy for you to access your favourite
@@ -108,24 +108,34 @@
       them on the go.
     </p>
 
-    <nav class="col-12 m-4 mx-0 pb-2">
-      <div class="row nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-        <button class="col-12 col-md-2 nav-link active pb-4" id="nav-simple-bookmarking-tab" data-bs-toggle="tab"
-          data-bs-target="#nav-simple-bookmarking" type="button" role="tab" aria-controls="nav-simple-bookmarking"
-          aria-selected="true">
-          Simple Bookmarking
-        </button>
-        <button class="col-12 col-md-2 nav-link pb-4" id="nav-speedy-searching-tab" data-bs-toggle="tab"
-          data-bs-target="#nav-speedy-searching" type="button" role="tab" aria-controls="nav-speedy-searching"
-          aria-selected="false">
-          Speedy Searching
-        </button>
-        <button class="col-12 col-md-2 nav-link pb-4" id="nav-easy-sharing-tab" data-bs-toggle="tab"
-          data-bs-target="#nav-easy-sharing" type="button" role="tab" aria-controls="nav-easy-sharing"
-          aria-selected="false">
-          Easy Sharing
-        </button>
-      </div>
+    <nav class="col-10 col-md-8 m-4 mx-0 pb-2">
+      <ul class="row nav nav-tabs nav-fill" id="features-tab" role="tablist">
+        <li class="nav-item col-12 col-md-2 px-0" role="presentation">
+          <button class=" nav-link active py-3  pb-md-4" id="nav-simple-bookmarking-tab" data-bs-toggle="tab"
+            data-bs-target="#nav-simple-bookmarking" type="button" role="tab" aria-controls="nav-simple-bookmarking"
+            aria-selected="true">
+            <div class="nav-link-text">Simple Bookmarking</div>
+          </button>
+        </li>
+        <li class="nav-item col-12 col-md-2 px-0" role="presentation">
+
+          <button class=" nav-link py-3  pb-md-4" id="nav-speedy-searching-tab" data-bs-toggle="tab"
+            data-bs-target="#nav-speedy-searching" type="button" role="tab" aria-controls="nav-speedy-searching"
+            aria-selected="false">
+            <div class="nav-link-text">Speedy Searching</div>
+          </button>
+        </li>
+
+        <li class="nav-item col-12 col-md-2 px-0" role="presentation">
+
+          <button class=" nav-link py-3  pb-md-4  position-relative" id="nav-easy-sharing-tab" data-bs-toggle="tab"
+            data-bs-target="#nav-easy-sharing" type="button" role="tab" aria-controls="nav-easy-sharing"
+            aria-selected="false">
+            <div class="nav-link-text">Easy Sharing</div>
+          </button>
+        </li>
+
+      </ul>
     </nav>
 
     <div class="tab-content my-4" id="nav-tabContent">
