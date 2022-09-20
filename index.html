@@ -12,14 +12,18 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
 </head>
+
+<!-- TODO hacer que los links te lleven a las secciones!!! -->
+<!-- //TODO borrar las imagenes de diseño la carpeta -->
+<!-- //TODO fijar la barra de navegacion!!!!! -->
+
+
 <!-- ! TODO lo responsive se ve fatal entre medio de los dos break points, como deberia gestionar eso?? -->
 <!-- TODO Sacar container fluid de las imagenes para evitar el resizing???? -->
-<!-- TODO hacer que los links te lleven a las secciones!!! -->
 <!-- !Esta bien hecho los botones con mixin?? asi deberia haberse hecho?? -->
 <!-- ! Definitiva mente no se como gestionar los tamaños de las cosas, por ejemplo con las cards el problema es que no se si darles un tamaño fijo, o hacerlas que se vuelvan responsive y crezcan con el tamaño de la pantalla, lo mismo con la imagen que tiene la card -->
 <!-- ! No entiendo como se reoganizan los tamaños de los elementos y paddings cuando achicas o agrandas una pantalla sin pasar un brak point -->
 <!-- //TODO poner un prettier para este codigo y el de sass que se ve fatal -->
-<!-- //TODO borrar las imagenes de diseño la carpeta -->
 <!-- //TODO arreglar los botones cuando les haces click! -->
 <!-- //TODO minifie css -->
 <!-- !Como hacer para que cuando uno achica la pantalla, se vaya achicando el padding y no el elemento? Sin usar BPs -->
@@ -28,11 +32,9 @@
 <!-- //TODO para las font size podes usar clamp!! max y min size -->
 <!-- //TODO cambiar todas las unidades que seas px a rem -->
 <!-- //TODO text-nowrap a los botones! y otras cosas -->
-<!-- //TODO cambiar la imagen de la hamburguesa!!!! -->
 <!-- //TODO poner el padding left de md todo en un solo lugar, darle nuevo valor de sass tal vez -->
-<!-- //TODO Usar Color principal: #5265E1 - Color secundario: #FA5959.  -->
-<!-- //TODO buscar botones que son las altos que los que vos tenes y cambiarlos!! fijate que a algunos los emparchaste con padding pero eso no esta bien!!!, Osea, revisar el tamaño de todos los botones -->
-<!-- //TODO favicon -->
+<!-- !Preguntar:: no entiendo como se deberian comportar los textos con responsive! -->
+
 
 <body class="pt-4 px-md-0">
 
@@ -84,7 +86,6 @@
   </nav>
 
 
-  <!-- //TODO fijar la barra de navegacion!!!!! -->
   <!-- PRESENTATION AND DOWNLOAD -->
   <section class="container-fluid pt-5 ps-md-6 text-center text-md-start">
     <div class="row ps-md-5">
@@ -115,12 +116,8 @@
     </div>
   </section>
 
-  <!-- //TODO el elemento de Simple bookmark tiene margen o padding disntito que el de las cosas que son un ciclo, el segundo -->
-  <!-- !Preguntar:: no entiendo como se deberian comportar los textos con responsive! -->
-  <!-- //TODO usar section en lugar de div -->
 
   <!-- FEATURES -->
-  <!-- !- El apartado "Features", con el texto descriptivo, debe ir dentro del Grid de Boostrap . Eso dice el enunciado. Por que??? que gano??? -->
 
 
 
@@ -193,7 +190,7 @@
         <div class="row">
           <div class="col-12 col-md-6 position-relative px-4 ps-md-6  pe-md-3">
             <img src="assets/Imagenes/illustration-features-tab-2.svg" alt="illustration-features-tab-2"
-              class="img-fluid position-relative pb-5" style="z-index: 1" />
+              class="img-fluid position-relative pb-5 ps-md-4 pb-md-4 " style="z-index: 1" />
             <div class="bg-primary rounded-pill rounded-start w-75 h-75 position-absolute bottom-0 start-0"
               style="z-index: 0"></div>
           </div>
@@ -217,8 +214,7 @@
             <img src="assets/Imagenes/illustration-features-tab-3.svg" alt="illustration-features-tab-3"
               class="img-fluid position-relative pb-5" style="z-index: 1" />
 
-            <div
-              class="bg-primary rounded-pill rounded-start w-100 h-75 position-absolute bottom-0 start-0 translate-middle-x"
+            <div class="bg-primary rounded-pill rounded-start w-75 h-75 position-absolute bottom-0 start-0"
               style="z-index: 0"></div>
           </div>
           <div class="col-12 col-md-6 pt-5 ps-md-6">
@@ -413,7 +409,6 @@
           </div>
         </div>
       </div>
-      <!-- Al primer child de la clase .accordion-item, le tenes que sacar el top border -->
     </div>
     <div class="col-12 pt-4 text-center">
 
@@ -436,13 +431,11 @@
 
       <form class="row g-md-2 mx-0 pt-4 needs-validation" novalidate>
         <div class="col-12 col-md-8 position-relative" style="z-index: 1">
-          <!-- <label for="exampleInputEmail1" class="form-label">Email address</label> -->
           <input type="email" class="form-control fs-7 py-2 position-relative" id="exampleInputEmail1"
             placeholder="Enter your email address" aria-describedby="emailHelp" required style="z-index: 10" />
           <div class="invalid-feedback bg-danger pt-2 pb-1 ps-2 text-start rounded-bottom position-relative"
             style="z-index: 1">
             <div class="text-white fw-bolder fs-8 fst-italic">
-              <!-- position-absolute bottom-0 pb-1 -->
               Whoops, make sure it's an email
             </div>
           </div>
