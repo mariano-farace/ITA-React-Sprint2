@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
-  <link rel="icon" type="image/x-icon" href="/assets/Imagenes/favicon-32x32.png">
+  <link rel="icon" type="image/x-icon" href="/assets/Imagenes/favicon-32x32.png" />
   <link href="./css/custom.css" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -14,9 +14,6 @@
 </head>
 
 <!-- TODO hacer que los links te lleven a las secciones!!! -->
-<!-- //TODO borrar las imagenes de diseño la carpeta -->
-<!-- //TODO fijar la barra de navegacion!!!!! -->
-
 
 <!-- ! TODO lo responsive se ve fatal entre medio de los dos break points, como deberia gestionar eso?? -->
 <!-- TODO Sacar container fluid de las imagenes para evitar el resizing???? -->
@@ -35,12 +32,9 @@
 <!-- //TODO poner el padding left de md todo en un solo lugar, darle nuevo valor de sass tal vez -->
 <!-- !Preguntar:: no entiendo como se deberian comportar los textos con responsive! -->
 
-
 <body class="pt-4 px-md-0">
-
-
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-md navbar-light px-4 pb-4 ps-md-6 pe-md-4 pt-3 fs-6">
+  <nav class="navbar navbar-expand-md bg-white navbar-light fixed-top px-4 pb-4 ps-md-6 pe-md-4 pt-3 fs-6">
     <div class="container-fluid px-0 ps-md-5">
       <a class="navbar-brand" href="#">
         <img src="assets/Imagenes/logo-bookmark.svg" alt="logo-bookmark" height="22" /></a>
@@ -59,13 +53,13 @@
         </div>
         <div class="offcanvas-body">
           <div class="navbar-nav ms-auto d-flex align-items-md-baseline">
-            <a class="nav-link text-secondary text-center  mx-md-3 fs-7" href="#">FEATURES</a>
+            <a class="nav-link text-secondary text-center mx-md-3 fs-7" href="#features-section">FEATURES</a>
             <a class="nav-link text-secondary text-center mx-md-3 fs-7" href="#">PRICING</a>
             <a class="nav-link text-secondary text-center mx-md-3 fs-7" href="#">CONTACT</a>
             <button class="btn login-button my-2 ms-md-4 me-md-4 shadow fw-bolder" type="button">
               LOGIN
             </button>
-            <div class="navbar-nav mx-auto d-flex flex-row pt-7 py-md-0 ">
+            <div class="navbar-nav mx-auto d-flex flex-row pt-7 py-md-0">
               <a class="pe-5" href="#">
                 <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor">
                   <path fill-rule="evenodd"
@@ -85,9 +79,8 @@
     </div>
   </nav>
 
-
   <!-- PRESENTATION AND DOWNLOAD -->
-  <section class="container-fluid pt-5 ps-md-6 text-center text-md-start">
+  <section class="container-fluid pt-7 ps-md-6 text-center text-md-start">
     <div class="row ps-md-5">
       <div class="col-12 col-md-6 order-md-2 position-relative px-0">
         <img src="assets/Imagenes/illustration-hero.svg" alt="illustration-hero"
@@ -116,14 +109,11 @@
     </div>
   </section>
 
-
   <!-- FEATURES -->
 
-
-
-  <section class="row container-fluid pt-6 pt-md-5  px-0 mx-0 justify-content-center">
+  <section class="row container-fluid pt-6 pt-md-5 px-0 mx-0 justify-content-center" id="features-section">
     <h3 class="col-12 fw-semibold text-center pt-5 pb-3">Features</h3>
-    <p class="col-12 col-md-5 text-secondary fs-6 text-center px-4 px-md-0 mx-md-auto  pb-3">
+    <p class="col-12 col-md-5 text-secondary fs-6 text-center px-4 px-md-0 mx-md-auto pb-3">
       Our aim is to make it quick and easy for you to access your favourite
       websites. Your bookmarks sync between your devices so you can access
       them on the go.
@@ -132,15 +122,14 @@
     <nav class="col-10 col-md-8 m-4 mx-0 pb-2">
       <ul class="row nav nav-tabs nav-fill" id="features-tab" role="tablist">
         <li class="nav-item col-12 col-md-2 px-0" role="presentation">
-          <button class=" nav-link active py-3  pb-md-4" id="nav-simple-bookmarking-tab" data-bs-toggle="tab"
+          <button class="nav-link active py-3 pb-md-4" id="nav-simple-bookmarking-tab" data-bs-toggle="tab"
             data-bs-target="#nav-simple-bookmarking" type="button" role="tab" aria-controls="nav-simple-bookmarking"
             aria-selected="true">
             <div class="nav-link-text">Simple Bookmarking</div>
           </button>
         </li>
         <li class="nav-item col-12 col-md-2 px-0" role="presentation">
-
-          <button class=" nav-link py-3  pb-md-4" id="nav-speedy-searching-tab" data-bs-toggle="tab"
+          <button class="nav-link py-3 pb-md-4" id="nav-speedy-searching-tab" data-bs-toggle="tab"
             data-bs-target="#nav-speedy-searching" type="button" role="tab" aria-controls="nav-speedy-searching"
             aria-selected="false">
             <div class="nav-link-text">Speedy Searching</div>
@@ -148,14 +137,12 @@
         </li>
 
         <li class="nav-item col-12 col-md-2 px-0" role="presentation">
-
-          <button class=" nav-link py-3  pb-md-4  position-relative" id="nav-easy-sharing-tab" data-bs-toggle="tab"
+          <button class="nav-link py-3 pb-md-4 position-relative" id="nav-easy-sharing-tab" data-bs-toggle="tab"
             data-bs-target="#nav-easy-sharing" type="button" role="tab" aria-controls="nav-easy-sharing"
             aria-selected="false">
             <div class="nav-link-text">Easy Sharing</div>
           </button>
         </li>
-
       </ul>
     </nav>
 
@@ -163,7 +150,7 @@
       <div class="tab-pane fade show active text-center text-md-start" id="nav-simple-bookmarking" role="tabpanel"
         aria-labelledby="nav-simple-bookmarking-tab">
         <div class="row">
-          <div class="col-12 col-md-6 position-relative px-4 ps-md-6  pe-md-3">
+          <div class="col-12 col-md-6 position-relative px-4 ps-md-6 pe-md-3">
             <img src="assets/Imagenes/illustration-features-tab-1.svg" alt="illustration-features-tab-1"
               class="img-fluid position-relative pb-5" style="z-index: 1" />
 
@@ -188,9 +175,9 @@
       <div class="tab-pane fade text-center text-md-start" id="nav-speedy-searching" role="tabpanel"
         aria-labelledby="nav-speedy-searching-tab">
         <div class="row">
-          <div class="col-12 col-md-6 position-relative px-4 ps-md-6  pe-md-3">
+          <div class="col-12 col-md-6 position-relative px-4 ps-md-6 pe-md-3">
             <img src="assets/Imagenes/illustration-features-tab-2.svg" alt="illustration-features-tab-2"
-              class="img-fluid position-relative pb-5 ps-md-4 pb-md-4 " style="z-index: 1" />
+              class="img-fluid position-relative pb-5 ps-md-4 pb-md-4" style="z-index: 1" />
             <div class="bg-primary rounded-pill rounded-start w-75 h-75 position-absolute bottom-0 start-0"
               style="z-index: 0"></div>
           </div>
@@ -234,20 +221,13 @@
 
   <!-- DOWNLOAD THE EXTENSION -->
 
-
-
-
-
-
-
-
-  <section class="row container-fluid  pt-5 pt-md-5 px-0 mx-0">
+  <section class="row container-fluid pt-5 pt-md-5 px-0 mx-0">
     <h3 class="col-12 fw-semibold text-center pt-5 pb-3 pb-md-4">
       Download the extension
     </h3>
     <p class="col-12 col-md-5 text-secondary fs-6 text-center pb-3 px-4 px-md-0 mx-md-auto">
-      We've got more browsers in the pipeline. Please do let us know if
-      you've got a favourite you'd like us to prioritize.
+      We've got more browsers in the pipeline. Please do let us know if you've
+      got a favourite you'd like us to prioritize.
     </p>
 
     <div class="container px-4">
@@ -300,9 +280,6 @@
                 <a href="#" class="btn btn-custom-blue btn-sm-custom-2 fw-bolder mb-3 mt-2 w-100">Add & Install
                   Extension</a>
               </div>
-
-
-
             </div>
           </div>
         </div>
@@ -312,15 +289,13 @@
 
   <!-- FAQ -->
 
-
-
   <section class="row container-fluid pt-5 pt-md-6 px-0 mx-0">
     <h3 class="col-12 fw-semibold text-center pt-5 pb-3 px-5">
       Frequently Asked Questions
     </h3>
     <p class="col-12 col-md-5 text-secondary fs-6 text-center px-4 px-md-0 mx-md-auto pb-3">
-      Here are some of our FAQS. If you have any other questions
-      you'd like answered please feel free to email us.
+      Here are some of our FAQS. If you have any other questions you'd like
+      answered please feel free to email us.
     </p>
     <div class="col-12 row justify-content-center mx-auto">
       <div class="accordion col-md-5 m-4 mx-0 pb-2" id="accordionExample">
@@ -337,11 +312,12 @@
               <strong>This is the first item's accordion body.</strong> It is
               shown by default, until the collapse plugin adds the appropriate
               classes that we use to style each element. These classes control
-              the overall appearance, as well as the showing and hiding via CSS
-              transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
+              the overall appearance, as well as the showing and hiding via
+              CSS transitions. You can modify any of this with custom CSS or
+              overriding our default variables. It's also worth noting that
+              just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit
+              overflow.
             </div>
           </div>
         </div>
@@ -356,13 +332,14 @@
             data-bs-parent="#accordionExample">
             <div class="accordion-body">
               <strong>This is the second item's accordion body.</strong> It is
-              hidden by default, until the collapse plugin adds the appropriate
-              classes that we use to style each element. These classes control
-              the overall appearance, as well as the showing and hiding via CSS
-              transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
+              hidden by default, until the collapse plugin adds the
+              appropriate classes that we use to style each element. These
+              classes control the overall appearance, as well as the showing
+              and hiding via CSS transitions. You can modify any of this with
+              custom CSS or overriding our default variables. It's also worth
+              noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit
+              overflow.
             </div>
           </div>
         </div>
@@ -377,13 +354,14 @@
             data-bs-parent="#accordionExample">
             <div class="accordion-body">
               <strong>This is the third item's accordion body.</strong> It is
-              hidden by default, until the collapse plugin adds the appropriate
-              classes that we use to style each element. These classes control
-              the overall appearance, as well as the showing and hiding via CSS
-              transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
+              hidden by default, until the collapse plugin adds the
+              appropriate classes that we use to style each element. These
+              classes control the overall appearance, as well as the showing
+              and hiding via CSS transitions. You can modify any of this with
+              custom CSS or overriding our default variables. It's also worth
+              noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit
+              overflow.
             </div>
           </div>
         </div>
@@ -398,21 +376,21 @@
             data-bs-parent="#accordionExample">
             <div class="accordion-body">
               <strong>This is the third item's accordion body.</strong> It is
-              hidden by default, until the collapse plugin adds the appropriate
-              classes that we use to style each element. These classes control
-              the overall appearance, as well as the showing and hiding via CSS
-              transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
+              hidden by default, until the collapse plugin adds the
+              appropriate classes that we use to style each element. These
+              classes control the overall appearance, as well as the showing
+              and hiding via CSS transitions. You can modify any of this with
+              custom CSS or overriding our default variables. It's also worth
+              noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit
+              overflow.
             </div>
           </div>
         </div>
       </div>
     </div>
     <div class="col-12 pt-4 text-center">
-
-      <button type="button" class="btn btn-sm-custom-2 btn-custom-blue shadow  fw-bolder text-center">
+      <button type="button" class="btn btn-sm-custom-2 btn-custom-blue shadow fw-bolder text-center">
         More Info
       </button>
     </div>
@@ -457,12 +435,12 @@
           <img src="assets/Imagenes/logo-bookmark-txt-white.svg" alt="logo-bookmark" height="22" /></a>
 
         <div class="container-fluid navbar-nav p-0 ps-md-4">
-          <a class="nav-link text-secondary mx-3 fs-7 text-white" href="#">FEATURES</a>
+          <a class="nav-link text-secondary mx-3 fs-7 text-white" href="#features-section">FEATURES</a>
           <a class="nav-link text-secondary mx-3 fs-7 text-white" href="#">PRICING</a>
           <a class="nav-link text-secondary mx-3 fs-7 text-white" href="#">CONTACT</a>
         </div>
 
-        <div class="navbar-nav mx-auto d-flex flex-row py-4 py-md-0 ">
+        <div class="navbar-nav mx-auto d-flex flex-row py-4 py-md-0">
           <a class="pe-5" href="#">
             <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor">
               <path fill-rule="evenodd"
